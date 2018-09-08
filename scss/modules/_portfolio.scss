@@ -1,0 +1,37 @@
+.portfolio {
+	text-align: center;
+	
+	& &-menu {
+		margin-left: 33.333333%;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	&-menu {
+
+		&__item {
+
+			&-link {
+				font: 16px/12px 'Open Sans', sans-serif;
+				color: #464646;
+				position: relative;
+
+				&:before {
+					content: '';
+					@include pos($b: -10px, $l: 50%);
+					@include size(40%, 2px);
+					background: none;
+					transform: translateX(-50%);
+				}
+
+				&--active, &:hover {
+					&:before {
+						background: #19bd9a;
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.testimonials {
+	background: #f3f3f3;
+	padding: 85px 0 100px;
+
+	.title{
+		margin-top: 0;
+	}
+
+	&-slider {
+
+		& &__item {
+			background: #fff;
+			padding: 50px;
+			padding-left: 100px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 1px 0 0 0 rgba(0, 0, 0, .05);
+		}
+
+		&__wrapper {
+			margin-left: 70px;
+		}
+
+		&__item {
+
+			&-photo {
+				border-radius: 50%;
+			}
+
+			&-text {
+				font: 16px/28px 'Open Sans', sans-serif;
+				letter-spacing: .5px;
+				color: #81868e;
+			}
+
+			&-name {
+				margin-top: 30px;
+				font: 700 16px/20px 'Open Sans', sans-serif;
+				letter-spacing: .4px;
+				color: #19bd9a;
+				text-transform: uppercase;
+			}
+
+			&-position {
+				font: 14px/20px 'Open Sans', sans-serif;
+				letter-spacing: .4px;
+				color: #464646;
+				text-transform: uppercase;
+			}
+		}
+
+		.slick-dots {
+			background: #fff;
+			padding-bottom: 60px;
+		}
+	}
+}

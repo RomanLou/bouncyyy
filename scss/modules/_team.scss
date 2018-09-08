@@ -1,0 +1,48 @@
+.team {
+
+	padding-bottom: 100px;
+
+	&-slider{
+
+		& &__item {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+		}
+		
+		&__wrapper {
+		text-align: right;
+		padding-left: 20%;
+		}
+
+		&__item {
+
+			&-name {
+				font: 20px 'Open Sans', sans-serif;
+				color: #464646;
+				letter-spacing: .4px;
+				position: relative;
+
+				&:before {
+					content: '';
+					@include pos($t: 6px, $r: -40px);
+					@include size(4px, 45px);
+					background: #19bd9a;
+				}
+			}
+
+			&-position {
+				font: 300 14px 'Source Sans Pro', sans-serif;
+				color: #81868e;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				margin: 10px 0 30px;
+			}
+
+			&-text {
+				font: 14px/25px 'Open Sans', sans-serif;
+				color: #81868e;
+			}
+		}
+	}
+}

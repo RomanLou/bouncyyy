@@ -1,0 +1,47 @@
+.header {
+	height: 100vh;
+	background: url(../images/header-bg.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 40px 0 80px;
+
+	&-title {
+		margin: 215px 0 35px;
+		font: 300 35px/70px 'Source Sans Pro', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #fff;
+		text-align: center;
+	}
+
+	&-text {
+		font: 16px/28px 'Open Sans', sans-serif;
+		letter-spacing: .5px;
+		color: #fff;
+		text-align: center;
+	}
+
+	&-menu__list {
+		display: flex;
+		justify-content: space-between;
+
+		&-link {
+			font: 16px/28px 'Open Sans', sans-serif;
+			color: #fff;
+			padding: 7px 20px;
+			border: 1px solid transparent;
+			border-radius: 16.5px;
+			text-decoration: none;
+
+			&--active,
+			&:hover {
+				border-color: #fff;
+			}
+		}
+	}
+
+	&-slide {
+		display: block;
+		margin-top: 220px;
+		text-align: center;
+	}
+}
